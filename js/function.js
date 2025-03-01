@@ -370,6 +370,16 @@
 			});
 		}                 
 	}
-	/* Why Choose us active End */
-	
+//   mobile navbar
+	document.querySelectorAll('.custom-nav__menu-item').forEach(item => {
+		item.addEventListener('click', function() {
+		
+			document.querySelectorAll('.custom-nav__menu-item').forEach(el => {
+				el.classList.remove('custom-nav__active');
+			});
+			
+		
+			this.classList.add('custom-nav__active');
+		});
+	});
 })(jQuery);
