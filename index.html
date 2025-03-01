@@ -13,7 +13,7 @@
 	<!-- Page Title -->
     <title>Sandsar Bio Energy | Home</title>
 	<!-- Favicon Icon -->
-	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+	<link rel="shortcut icon" type="image/x-icon" href="images/sandar-logo.png">
 	<!-- Google Fonts Css-->
 	<link rel="preconnect" href="https://fonts.googleapis.com/">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
@@ -371,24 +371,28 @@
                         <div class="service-item">
                             <div class="icon-box ser-icons">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
-                                    <g fill="none" stroke="#1E88E5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
-                                      <!-- Main factory building -->
-                                      <rect x="30" y="100" width="140" height="80" rx="2" />
-                                      
-                                      <!-- Left chimney -->
-                                      <rect x="50" y="70" width="25" height="30" rx="1" />
-                                      <path d="M57.5 70 L57.5 50 C57.5 45, 67.5 45, 67.5 50 L67.5 70" />
-                                      
-                                      <!-- Right chimney -->
-                                      <rect x="100" y="70" width="25" height="30" rx="1" />
-                                      <path d="M107.5 70 L107.5 50 C107.5 45, 117.5 45, 117.5 50 L117.5 70" />
-                                      
-                                      <!-- Side building -->
-                                      <rect x="130" y="130" width="40" height="50" rx="1" />
-                                      
-                                      <!-- Door -->
-                                      <rect x="145" y="155" width="15" height="25" rx="1" />
-                                    </g>
+                                    <defs>
+                                      <linearGradient id="biofuelGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" stop-color="#2196F3" />
+                                        <stop offset="100%" stop-color="#0D47A1" />
+                                      </linearGradient>
+                                    </defs>
+                                    
+                                    <!-- Background Circle -->
+                                    <circle cx="100" cy="100" r="90" fill="white" stroke="url(#biofuelGradient)" stroke-width="2" />
+                                    
+                                    <!-- Fuel Drop -->
+                                    <path d="M100 40 C130 80 145 120 130 150 C115 180 85 180 70 150 C55 120 70 80 100 40Z" fill="url(#biofuelGradient)" />
+                                    
+                                    <!-- Leaf Detail -->
+                                    <path d="M85 100 Q70 80 90 65 Q75 80 85 100" fill="#ffffff" fill-opacity="0.7" />
+                                    
+                                    <!-- Plant Stem -->
+                                    <path d="M100 140 L100 170" stroke="#0D47A1" stroke-width="6" stroke-linecap="round" />
+                                    
+                                    <!-- Plant Leaves -->
+                                    <path d="M100 160 C80 150 70 160 65 170" stroke="#0D47A1" stroke-width="4" stroke-linecap="round" fill="none" />
+                                    <path d="M100 150 C120 140 130 150 135 160" stroke="#0D47A1" stroke-width="4" stroke-linecap="round" fill="none" />
                                   </svg>
                             </div>
 
@@ -403,25 +407,27 @@
                         <div class="service-item">
                             <div class="icon-box ser-icons">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
-                                    <g fill="none" stroke="#1E88E5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
-                                      <!-- Main building -->
-                                      <rect x="30" y="90" width="70" height="90" rx="2" />
-                                      
-                                      <!-- Smokestacks -->
-                                      <rect x="40" y="65" width="10" height="25" rx="1" />
-                                      <rect x="60" y="65" width="10" height="25" rx="1" />
-                                      <rect x="80" y="65" width="10" height="25" rx="1" />
-                                      
-                                      <!-- Smoke -->
-                                      <path d="M45 65 C45 55, 50 55, 50 65" stroke-width="3" />
-                                      <path d="M65 65 C65 55, 70 55, 70 65" stroke-width="3" />
-                                      <path d="M85 65 C85 55, 90 55, 90 65" stroke-width="3" />
-                                      
-                                      <!-- Storage tanks/silos -->
-                                      <rect x="110" y="110" width="20" height="70" rx="2" />
-                                      <rect x="140" y="110" width="20" height="70" rx="2" />
-                                      <rect x="170" y="110" width="20" height="70" rx="2" />
-                                    </g>
+                                    <defs>
+                                      <linearGradient id="wasteEnergyGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" stop-color="#64B5F6" />
+                                        <stop offset="100%" stop-color="#1565C0" />
+                                      </linearGradient>
+                                    </defs>
+                                    
+                                    <!-- Background Circle -->
+                                    <circle cx="100" cy="100" r="90" fill="white" stroke="url(#wasteEnergyGradient)" stroke-width="2" />
+                                    
+                                    <!-- Trash Bin -->
+                                    <rect x="65" y="100" width="70" height="60" rx="5" fill="#1976D2" />
+                                    <path d="M60 100 L140 100 L130 85 L70 85 Z" fill="#0D47A1" />
+                                    
+                                    <!-- Recycling Arrows -->
+                                    <path d="M85 140 L75 120 L95 120 Z" fill="#ffffff" />
+                                    <path d="M125 140 L115 120 L135 120 Z" fill="#ffffff" />
+                                    
+                                    <!-- Energy Lightning Bolt -->
+                                    <path d="M100 40 L80 90 L100 90 L80 140" stroke="url(#wasteEnergyGradient)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+                                    <path d="M120 65 L100 115 L120 115 L100 160" stroke="url(#wasteEnergyGradient)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none" />
                                   </svg>
                             </div>
 
@@ -437,22 +443,35 @@
                         <div class="service-item">
                             <div class="icon-box ser-icons">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
-                                    <g fill="none" stroke="#1E88E5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
-                                      <!-- Main tank -->
-                                      <path d="M50 100 L150 100 L140 180 L60 180 Z" />
-                                      
-                                      <!-- Top connector -->
-                                      <rect x="90" y="70" width="20" height="30" rx="1" />
-                                      
-                                      <!-- Top pipe -->
-                                      <line x1="100" y1="50" x2="100" y2="70" />
-                                      
-                                      <!-- Droplet symbol -->
-                                      <path d="M100 130 L100 130 Q100 110, 80 130 Q80 150, 100 150 Q120 150, 120 130 Q120 110, 100 130 Z" />
-                                      
-                                      <!-- Side pipe -->
-                                      <path d="M140 130 L160 130 L160 180" />
-                                    </g>
+                                    <defs>
+                                      <linearGradient id="bioenergyGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" stop-color="#64B5F6" />
+                                        <stop offset="100%" stop-color="#0D47A1" />
+                                      </linearGradient>
+                                    </defs>
+                                    
+                                    <!-- Background Circle -->
+                                    <circle cx="100" cy="100" r="90" fill="white" stroke="url(#bioenergyGradient)" stroke-width="2" />
+                                    
+                                    <!-- Factory Silhouette -->
+                                    <path d="M30 130 L30 100 L60 80 L60 130" fill="#1976D2" />
+                                    <path d="M60 130 L60 70 L90 50 L90 130" fill="#1565C0" />
+                                    <path d="M90 130 L90 80 L120 60 L120 130" fill="#1976D2" />
+                                    <rect x="120" y="80" width="50" height="50" fill="#1565C0" />
+                                    <rect x="30" y="130" width="140" height="15" fill="#0D47A1" />
+                                    
+                                    <!-- Smokestacks -->
+                                    <rect x="45" y="60" width="10" height="30" fill="#0D47A1" />
+                                    <rect x="75" y="30" width="10" height="40" fill="#0D47A1" />
+                                    <rect x="145" y="60" width="10" height="20" fill="#0D47A1" />
+                                    
+                                    <!-- Bioenergy Elements -->
+                                    <path d="M45 60 C45 30 75 30 75 30" stroke="url(#bioenergyGradient)" stroke-width="4" fill="none" />
+                                    <path d="M75 30 C75 10 145 10 145 60" stroke="url(#bioenergyGradient)" stroke-width="4" fill="none" />
+                                    
+                                    <!-- Leaf Symbol -->
+                                    <path d="M100 35 Q120 55 100 75 Q80 55 100 35Z" fill="#2196F3" />
+                                    <line x1="100" y1="75" x2="100" y2="95" stroke="#2196F3" stroke-width="3" />
                                   </svg>
                             </div>
 
@@ -468,16 +487,33 @@
                         <div class="service-item">
                             <div class="icon-box ser-icons">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
-                                    <g fill="none" stroke="#1E88E5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
-                                      <!-- Main building -->
-                                      <rect x="30" y="100" width="140" height="80" rx="2" />
-                                      
-                                      <!-- Door -->
-                                      <rect x="75" y="150" width="30" height="30" rx="1" />
-                                      
-                                      <!-- Sawtooth roof -->
-                                      <path d="M30 100 L30 60 L50 60 L50 80 L70 60 L70 80 L90 60 L90 80 L110 60 L110 80 L130 60 L130 80 L150 60 L150 80 L170 60 L170 100" />
-                                    </g>
+                                    <defs>
+                                      <linearGradient id="resourceGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" stop-color="#64B5F6" />
+                                        <stop offset="100%" stop-color="#0D47A1" />
+                                      </linearGradient>
+                                    </defs>
+                                    
+                                    <!-- Background Circle -->
+                                    <circle cx="100" cy="100" r="90" fill="white" stroke="url(#resourceGradient)" stroke-width="2" />
+                                    
+                                    <!-- Earth/Globe -->
+                                    <circle cx="100" cy="100" r="50" fill="#2196F3" />
+                                    <path d="M60 80 Q100 50 140 80 Q100 140 60 80" fill="#0D47A1" />
+                                    <path d="M75 130 Q100 160 125 130 Q100 90 75 130" fill="#0D47A1" />
+                                    
+                                    <!-- Recycling Arrows -->
+                                    <path d="M100 40 L100 65" stroke="url(#resourceGradient)" stroke-width="6" stroke-linecap="round" />
+                                    <path d="M100 40 L90 50" stroke="url(#resourceGradient)" stroke-width="6" stroke-linecap="round" />
+                                    <path d="M100 40 L110 50" stroke="url(#resourceGradient)" stroke-width="6" stroke-linecap="round" />
+                                    
+                                    <path d="M140 120 L120 130" stroke="url(#resourceGradient)" stroke-width="6" stroke-linecap="round" />
+                                    <path d="M140 120 L140 105" stroke="url(#resourceGradient)" stroke-width="6" stroke-linecap="round" />
+                                    <path d="M140 120 L155 115" stroke="url(#resourceGradient)" stroke-width="6" stroke-linecap="round" />
+                                    
+                                    <path d="M60 120 L80 130" stroke="url(#resourceGradient)" stroke-width="6" stroke-linecap="round" />
+                                    <path d="M60 120 L60 105" stroke="url(#resourceGradient)" stroke-width="6" stroke-linecap="round" />
+                                    <path d="M60 120 L45 115" stroke="url(#resourceGradient)" stroke-width="6" stroke-linecap="round" />
                                   </svg>
                             </div>
 
@@ -916,7 +952,7 @@
                         <!-- Post Featured Image Start-->
                         <div class="post-featured-image">
                             <figure>
-                                <a href="blog-single.html" class="image-anime" data-cursor-text="View">
+                                <a href="blogDetails.html" class="image-anime" data-cursor-text="View">
                                     <img src="images/home/blog-1.jpg" alt="">
                                 </a>
                             </figure>
@@ -927,13 +963,13 @@
                         <div class="post-item-body">
                             <!-- Post Item Content Start -->
                             <div class="post-item-content">
-                                <h2><a href="blog-single.html">The Future of Biodiesel: Sustainable Energy for a Greener Tomorrow</a></h2>
+                                <h2><a href="blogDetails.html">The Future of Biodiesel: Sustainable Energy for a Greener Tomorrow</a></h2>
                             </div>
                             <!-- Post Item Content End -->
 
                             <!-- Post Item Button Start -->
                             <div class="post-item-btn">
-                                <a href="blog-single.html"><img src="images/arrow-white.svg" alt=""></a>
+                                <a href="blogDetails.html"><img src="images/arrow-white.svg" alt=""></a>
                             </div>
                             <!-- Post Item Button End -->
                         </div>
@@ -948,7 +984,7 @@
                         <!-- Post Featured Image Start-->
                         <div class="post-featured-image">
                             <figure>
-                                <a href="blog-single.html" class="image-anime" data-cursor-text="View">
+                                <a href="blogDetails.html" class="image-anime" data-cursor-text="View">
                                     <img src="images/home/blog-2.jpg" alt="">
                                 </a>
                             </figure>
@@ -959,13 +995,13 @@
                         <div class="post-item-body">
                             <!-- Post Item Content Start -->
                             <div class="post-item-content">
-                                <h2><a href="blog-single.html">Revolutionizing Energy: The Role of Biodiesel in a Sustainable Future</a></h2>
+                                <h2><a href="blogDetails.html">Revolutionizing Energy: The Role of Biodiesel in a Sustainable Future</a></h2>
                             </div>
                             <!-- Post Item Content End -->
 
                             <!-- Post Item Button Start -->
                             <div class="post-item-btn">
-                                <a href="blog-single.html"><img src="images/arrow-white.svg" alt=""></a>
+                                <a href="blogDetails.html"><img src="images/arrow-white.svg" alt=""></a>
                             </div>
                             <!-- Post Item Button End -->
                         </div>
@@ -1031,7 +1067,7 @@
                     <div class="footer-links">
                         <h3>quick links</h3>
                         <ul>
-                            <li><a href="index-2.html">home</a></li>
+                            <li><a href="index.html">home</a></li>
                             <li><a href="about.html">about us</a></li>
                             <li><a href="services.html">services</a></li>
                             <li><a href="blog.html">blog</a></li>
