@@ -493,7 +493,8 @@ body{
 /************************************/
 
 .topbar{
-	padding: 10px 0;
+	padding: 17px 0;
+	
 }
 
 .topbar-contact-info{
@@ -4705,7 +4706,7 @@ header.main-header .header-sticky.active{
 	}
 
 	.navbar{
-		padding: 15px 0;
+		padding: 30px 0;
 	}
 
 	.main-header .navbar-brand{
@@ -4896,6 +4897,13 @@ header.main-header .header-sticky.active{
 
 	.our-story-header-img{
 		margin-top: 20px;
+	}
+	.logo{
+		position: absolute;
+		left: 5%!important;
+		top: 50%;
+		transform: translate(-0%,-50%)!important;
+		width: 90px;
 	}
 
 	.our-story-img{
@@ -6419,13 +6427,12 @@ header.main-header .header-sticky.active{
 	.google-map-iframe iframe{
         height: 350px;
     }
+
 }
 
 
 /* sandsar */
-.logo{
-	width: 60px;
-}
+
 .ser-icons{
 	width: 70px;
 	height: 70px;
@@ -6448,7 +6455,7 @@ header.main-header .header-sticky.active{
     right: 20px;
     width: 60px;
     height: 60px;
-    z-index: 1000;
+    z-index: 90;
 }
 
 .whatsapp-float img {
@@ -6505,6 +6512,7 @@ header.main-header .header-sticky.active{
 	.footer-copyright-text p{
 		margin-bottom: 4rem!important;
 	}
+	
 }
 
 .custom-nav__menu-item {
@@ -6565,4 +6573,25 @@ header.main-header .header-sticky.active{
 	height: 80px!important;
 	object-fit: cover;
 	border-radius: 50%;
+}
+.site-logo{
+	position: relative;
+
+}
+.logo{
+	position: absolute;
+	left: 0%;
+	top: 50%;
+	transform: translate(-10%,-50%);
+	width: 90px;
+}
+@media(max-width:464px){
+	.topbar-contact-info ul li a p{
+		font-size: 2.5vw;
+	}
+}
+@media(min-width:986px){
+	.topbar-contact-info ul li a p{
+		font-size: 1.2vw;
+	}
 }
