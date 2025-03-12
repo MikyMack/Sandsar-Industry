@@ -494,6 +494,11 @@ body{
 
 .topbar{
 	padding: 17px 0;
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
 	
 }
 
@@ -4903,7 +4908,10 @@ header.main-header .header-sticky.active{
 		left: 5%!important;
 		top: 50%;
 		transform: translate(-0%,-50%)!important;
-		width: 90px;
+		width: 90px!important;
+	}
+	.topbar{
+		height: 60px;
 	}
 
 	.our-story-img{
@@ -6583,7 +6591,7 @@ header.main-header .header-sticky.active{
 	left: 0%;
 	top: 50%;
 	transform: translate(-10%,-50%);
-	width: 90px;
+	width: 105px;
 }
 @media(max-width:464px){
 	.topbar-contact-info ul li a p{
@@ -6595,3 +6603,8 @@ header.main-header .header-sticky.active{
 		font-size: 1.2vw;
 	}
 }
+@media (min-width: 766px) and (max-width: 790px) {
+	.topbar-contact-info ul li a p {
+	  font-size: 1.7vw!important;
+	}
+  }

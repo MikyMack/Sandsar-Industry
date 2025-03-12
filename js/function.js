@@ -47,9 +47,9 @@
 		speed: 1000,
 		spaceBetween: 0,
 		loop: true,
-		autoplay: {
-			delay: 4000,
-		},
+		// autoplay: {
+		// 	delay: 4000,
+		// },
 		pagination: {
 			el: '.hero-pagination',
 			clickable: true,
