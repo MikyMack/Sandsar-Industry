@@ -229,8 +229,9 @@
 
                         <div class="contact-form">
                             <!-- Contact Form Start -->
-                            <form id="contactForm" onsubmit="sendToWhatsApp(event)" class="wow fadeInUp" data-wow-delay="0.5s">
+                            <form action="https://api.web3forms.com/submit" class="wow fadeInUp" data-wow-delay="0.5s" method="POST">
                                 <div class="row">
+                                    <input type="hidden" name="access_key" value="5964d91a-08b5-4afc-871e-e2ed87a32b91">
                                     <div class="form-group col-md-6 mb-4">
                                         <input type="text" name="fname" class="form-control" id="fname" placeholder="Enter first name" required>
                                         <div class="help-block with-errors"></div>
@@ -262,22 +263,6 @@
                                     </div>
                                 </div>
                             </form>
-
-                            <script>
-                                function sendToWhatsApp(event) {
-                                    event.preventDefault();
-                                    const fname = document.getElementById('fname').value;
-                                    const lname = document.getElementById('lname').value;
-                                    const email = document.getElementById('email').value;
-                                    const phone = document.getElementById('phone').value;
-                                    const message = document.getElementById('message').value;
-
-                                    const whatsappMessage = `Name: ${fname} ${lname}%0AEmail: ${email}%0APhone: ${phone}%0AMessage: ${message}`;
-                                    const whatsappUrl = `https://wa.me/919633505445?text=${whatsappMessage}`;
-
-                                    window.open(whatsappUrl, '_blank');
-                                }
-                            </script>
                             <!-- Contact Form End -->
                         </div>
                     </div>
